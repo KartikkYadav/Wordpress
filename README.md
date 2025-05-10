@@ -1,10 +1,15 @@
-# Wordpress
-### 1. First, we need to install CentOS. After that, perform basic configurations such as setting a static IP, enabling SSH and root permission, and installing tools like ZSH and GRC.
-- [Click the Link for Configure](https://github.com/nikhilpatidar01/Linux-Server/blob/Master/Debian%2012%20Setup%20Guide.md#debian-12-setup-guide) 
 
-### 2. Install the Apache HTTPD server, PHP, phpMyAdmin, MySQL, and WordPress, and configure all of them properly.
-- [Apache Server Configure](https://github.com/nikhilpatidar01/Linux-Server/blob/Master/Apache%20Web%20Server/CentOS/Apache%20Web%20Server/2.%20PHP%2C%20MySQL%2C%20Wordpress%20Installation%20and%20Configurartion/1.%20Apache%20Web%20Server%20Binding%20IP%2C%20Port%2C%20Domain%20Name%2C%20SSL%20/1.%20Apache%20Web%20Server%20Setup%20and%20Configuration.md#apache-web-server-setup-and-configuration)
-- [PHP Configure](https://github.com/nikhilpatidar01/Linux-Server/blob/Master/Apache%20Web%20Server/CentOS/Apache%20Web%20Server/2.%20PHP%2C%20MySQL%2C%20Wordpress%20Installation%20and%20Configurartion/2.%20PHP%2C%20MySQL%20Wordpress%20Installation%20and%20Configuration/1.%20PHP%20Installation%20in%20Centos.md#what-is-php)
-- [MySQL Configure](https://github.com/nikhilpatidar01/Linux-Server/blob/Master/Apache%20Web%20Server/CentOS/Apache%20Web%20Server/2.%20PHP%2C%20MySQL%2C%20Wordpress%20Installation%20and%20Configurartion/2.%20PHP%2C%20MySQL%20Wordpress%20Installation%20and%20Configuration/2.%20MySQL%20Installation%20and%20Configuration%20in%20Centos.md#what-is-mysql)
-- [WordPress Configure](https://github.com/nikhilpatidar01/Linux-Server/blob/Master/Apache%20Web%20Server/CentOS/Apache%20Web%20Server/2.%20PHP%2C%20MySQL%2C%20Wordpress%20Installation%20and%20Configurartion/2.%20PHP%2C%20MySQL%20Wordpress%20Installation%20and%20Configuration/3.%20WordPress%20Installation%20and%20Configuration.md#what-is-wordpress)
+<h1 align="center">🌐 WordPress 🌐</h1>
+
+## 📘 Getting Started with WordPress
+
+* 🖥️ [CentOS Installation and Configure](https://github.com/nikhilpatidar01/Wordpress/blob/Master/1.%20Apache%20PHP%20Phpmyadmin%20MySQL%20and%20WordPress%20Setup.md#wordpress-%EF%B8%8F)
+* ⚙️ [Apache, PHP, Phpmyadmin, MySQL and WordPress Setup](https://github.com/nikhilpatidar01/Wordpress/blob/Master/1.%20Apache%20PHP%20Phpmyadmin%20MySQL%20and%20WordPress%20Setup.md#wordpress-%EF%B8%8F)
+* 📖 [What is WordPress](https://github.com/nikhilpatidar01/Wordpress/blob/Master/2.%20What%20is%20WordPress.md#wordpress-is-a-free-and-open-source-content-management-system-cms-that-is-widely-used-to-create-websites-and-blogs-heres-a-brief-overview)
+* 🧱 [CMS Technology Stack (2025)](https://github.com/nikhilpatidar01/Wordpress/blob/Master/3.%20%20CMS%20Technology%20Stack%20%282025%29.md#-cms--content-management-system)
+* 👤 [Users Roles and Capabilities](https://github.com/nikhilpatidar01/Wordpress/blob/Master/4.%20User%20Roles%20and%20Capabilities.md#-wordpress-user-roles-and-capabilities)
+* 🎨 [WordPress Theme](https://github.com/nikhilpatidar01/Wordpress/blob/Master/5.%20WordPress%20Theme.md#-wordpress-theme)
+* 🌟 [WordPress Features Explanation](https://github.com/nikhilpatidar01/Wordpress/blob/Master/6.%20WordPress%20Features%20Explanation.md#-wordpress-explanation)
+
+---
 
