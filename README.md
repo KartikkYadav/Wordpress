@@ -1,5 +1,5 @@
 
-<h1 align="center">🌐 WordPress Complete Guide 🌐</h1>
+<h1 align="center">🌐 WordPress 🌐</h1>
 
 ---
 
