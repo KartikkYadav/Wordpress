@@ -1,0 +1,141 @@
+
+# 🛠️ WordPress Migration
+
+Migrating a WordPress site involves moving your website's files and database from one server or domain to another. This guide covers **all common scenarios** such as changing hosts, moving from localhost to live server, and switching domains.
+
+---
+
+## 📌 Common Migration Scenarios
+
+1. **Changing Hosting Providers (Same Domain)**
+2. **Changing Domain Names**
+3. **Moving from Localhost to Live Server**
+4. **Creating a Staging or Development Copy**
+
+---
+
+## ✅ Prerequisites
+
+* Access to your **current hosting** account (e.g., [Bluehost](https://www.bluehost.com), [Hostinger](https://www.hostinger.com))
+* Access to your **new hosting** account
+* Access to **[phpMyAdmin](https://www.phpmyadmin.net/)**
+* FTP tool like **[FileZilla](https://filezilla-project.org/)** or use **File Manager** via cPanel
+* (Optional) SSH access for **[WP-CLI](https://developer.wordpress.org/cli/commands/)**
+* WordPress admin login credentials
+
+---
+
+## 🧭 Step-by-Step Migration Process
+
+### 1️⃣ Backup Your WordPress Site
+
+#### 🔹 Using a Plugin *(Recommended)*
+
+Install and activate any of the following:
+
+* **[UpdraftPlus](https://wordpress.org/plugins/updraftplus/)**
+* **[All-in-One WP Migration](https://wordpress.org/plugins/all-in-one-wp-migration/)**
+* **[Duplicator](https://wordpress.org/plugins/duplicator/)**
+
+#### 🔹 Manual Backup
+
+* **Files**:
+
+  * Use **[FileZilla](https://filezilla-project.org/)** or cPanel File Manager
+  * Download all files from your WordPress root directory (`public_html`)
+
+* **Database**:
+
+  * Access **[phpMyAdmin](https://www.phpmyadmin.net/)**
+  * Select your WordPress database → Click **Export** → Choose **Quick** & **SQL** → Click **Go**
+
+---
+
+### 2️⃣ Upload Files to New Server
+
+* Use **FTP** or File Manager in your new host’s cPanel
+* Upload all WordPress files to `public_html` or the correct directory
+* If using **Duplicator**, open `installer.php` in browser and follow the steps
+
+---
+
+### 3️⃣ Import the Database
+
+* Open **phpMyAdmin** on your new hosting panel
+* Create a **new database** and **user**, assign full privileges
+* Go to the new DB → Click **Import** → Select your `.sql` file → Click **Go**
+
+---
+
+### 4️⃣ Update `wp-config.php`
+
+Update with new DB info:
+
+```php
+define('DB_NAME', 'your_new_database');
+define('DB_USER', 'your_db_user');
+define('DB_PASSWORD', 'your_password');
+define('DB_HOST', 'localhost');
+```
+
+---
+
+### 5️⃣ Update Domain URLs (If Changed)
+
+Use SQL Queries or plugins to update old domain URLs with the new one.
+
+---
+
+## 🧮 SQL Queries for Domain Change
+
+```sql
+-- Update site URL and home URL
+UPDATE wp_options 
+SET option_value = 'http://newdomain.com' 
+WHERE option_name = 'siteurl' OR option_name = 'home';
+
+-- Update GUIDs
+UPDATE wp_posts 
+SET guid = REPLACE(guid, 'http://olddomain.com', 'http://newdomain.com');
+
+-- Update post content links
+UPDATE wp_posts 
+SET post_content = REPLACE(post_content, 'http://olddomain.com', 'http://newdomain.com');
+
+-- Update post excerpts
+UPDATE wp_posts 
+SET post_excerpt = REPLACE(post_excerpt, 'http://olddomain.com', 'http://newdomain.com');
+
+-- Update metadata values
+UPDATE wp_postmeta 
+SET meta_value = REPLACE(meta_value, 'http://olddomain.com', 'http://newdomain.com');
+```
+
+---
+
+## 🧰 Plugin Alternatives (For Beginners)
+
+Use these tools to safely update domain URLs in WordPress (including serialized data):
+
+* **[Better Search Replace](https://wordpress.org/plugins/better-search-replace/)**
+* **[WP Migrate DB](https://wordpress.org/plugins/wp-migrate-db/)**
+* **[Velvet Blues Update URLs](https://wordpress.org/plugins/velvet-blues-update-urls/)**
+
+---
+
+## ✅ Final Checks After Migration
+
+* Login to **WordPress Admin Panel** on the new server
+* Go to **Settings → Permalinks** → Click **Save Changes**
+* Verify:
+
+  * Pages & Posts open properly
+  * Images and media load
+  * Plugins & Themes are working
+* Delete unused migration files like:
+
+  * `installer.php`
+  * `.sql` backups
+
+---
+
