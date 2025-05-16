@@ -31,7 +31,7 @@
 
 ---
 
-## 🔌 Plugins & Features
+## 🔌 Plugins & Features 
 
 > Enhance your site with powerful features and integrations.
 
