@@ -1,12 +1,8 @@
 
 <h1 align="center">🌐 WordPress 🌐</h1>
 
-
-
 ## 📦 Installation & Configuration
-
 > Step-by-step setup for WordPress on CentOS with required components.
-
 - 🖥️ [CentOS Installation & Configuration Guide](https://github.com/nikhilpatidar01/Wordpress/blob/Master/1.%20Apache%20PHP%20Phpmyadmin%20MySQL%20and%20WordPress%20Setup.md#wordpress-%EF%B8%8F)  
 - ⚙️ [Apache, PHP, PhpMyAdmin, MySQL & WordPress Setup](https://github.com/nikhilpatidar01/Wordpress/blob/Master/1.%20Apache%20PHP%20Phpmyadmin%20MySQL%20and%20WordPress%20Setup.md#wordpress-%EF%B8%8F)
 
@@ -38,10 +34,7 @@
 - 🌟 [Core WordPress Features](https://github.com/nikhilpatidar01/Wordpress/blob/Master/6.%20WordPress%20Features%20Explanation.md#-wordpress-explanation)
 - 🧩 [Using WordPress Plugins](https://github.com/nikhilpatidar01/Wordpress/blob/Master/8.%20WordPress%20Plugins.md#-what-is-a-wordpress-plugin)
 
-
-
 ## 🚀 Migration & Deployment
-
 > Move your WordPress site to a new server or domain.
 
 - 📦 [WordPress Migration Guide](https://github.com/nikhilpatidar01/Wordpress/blob/Master/9.%20WordPress%20Migration.md#%EF%B8%8F-wordpress-migration)
