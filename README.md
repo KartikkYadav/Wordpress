@@ -10,6 +10,8 @@
 * 👤 [Users Roles and Capabilities](https://github.com/nikhilpatidar01/Wordpress/blob/Master/4.%20User%20Roles%20and%20Capabilities.md#-wordpress-user-roles-and-capabilities)
 * 🎨 [WordPress Theme](https://github.com/nikhilpatidar01/Wordpress/blob/Master/5.%20WordPress%20Theme.md#-wordpress-theme)
 * 🌟 [WordPress Features Explanation](https://github.com/nikhilpatidar01/Wordpress/blob/Master/6.%20WordPress%20Features%20Explanation.md#-wordpress-explanation)
-
+* 🌟 [Wordpress THEMES](https://github.com/nikhilpatidar01/Wordpress/blob/Master/7.%20Wordpress%20THEMES.md#wordpress-theme)
+* 🌟 [Wordpress Plugins](https://github.com/nikhilpatidar01/Wordpress/blob/Master/8.%20WordPress%20Plugins.md#-what-is-a-wordpress-plugin)
+* 🌟 [Wordpress Migration](https://github.com/nikhilpatidar01/Wordpress/blob/Master/9.%20WordPress%20Migration.md#%EF%B8%8F-wordpress-migration)
 ---
 
