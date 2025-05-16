@@ -47,8 +47,5 @@
 - 📦 [WordPress Migration Guide](https://github.com/nikhilpatidar01/Wordpress/blob/Master/9.%20WordPress%20Migration.md#%EF%B8%8F-wordpress-migration)
 
 ---
-```
-
----
 
 
